@@ -7,5 +7,6 @@ numpy>=1.23.0
 shap>=0.41.0
 matplotlib>=3.5.0
 markdown2
+ipython
 
 
