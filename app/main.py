@@ -148,14 +148,15 @@ footer { display: none; }
 }
 .stRadio > div > label {
     background: #f5f5f5 !important; border: 2px solid #e0e0e0 !important;
-    border-radius: 10px !important; padding: 0.75rem 0.5rem !important;
+    border-radius: 10px !important; padding: 0.75rem 0.4rem !important;
     font-size: 0.82rem !important; font-weight: 500 !important;
     color: #333 !important; cursor: pointer !important;
     transition: all 0.15s ease !important;
-    flex: 1 1 0 !important; width: 0 !important;
+    flex: 1 1 auto !important;
     text-align: center !important;
-    white-space: normal !important; word-break: break-word !important;
-    line-height: 1.3 !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
 }
 /* Hide the default radio circle */
 .stRadio > div > label > div:first-child { display: none !important; }
