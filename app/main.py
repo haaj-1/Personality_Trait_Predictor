@@ -141,17 +141,19 @@ footer { display: none; }
 
 /* ── Radio override ── */
 .stRadio > label { display: none !important; }
+.stRadio { width: 100% !important; }
 .stRadio > div {
     display: flex !important; gap: 0.5rem !important;
     flex-wrap: nowrap !important; width: 100% !important;
 }
 .stRadio > div > label {
     background: #f5f5f5 !important; border: 2px solid #e0e0e0 !important;
-    border-radius: 10px !important; padding: 0.65rem 0.5rem !important;
-    font-size: 0.8rem !important; font-weight: 500 !important;
+    border-radius: 10px !important; padding: 0.75rem 0.5rem !important;
+    font-size: 0.82rem !important; font-weight: 500 !important;
     color: #333 !important; cursor: pointer !important;
-    transition: all 0.15s ease !important; flex: 1 !important;
-    text-align: center !important; min-width: 0 !important;
+    transition: all 0.15s ease !important;
+    flex: 1 1 0 !important; width: 0 !important;
+    text-align: center !important;
     white-space: normal !important; word-break: break-word !important;
     line-height: 1.3 !important;
 }
