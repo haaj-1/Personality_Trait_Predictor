@@ -4,6 +4,8 @@ A machine learning web app that predicts your Big Five (OCEAN) personality trait
 
 Built with Streamlit, CatBoost, and SHAP.
 
+🔗 **Live Demo:** [personalitytraitpredictor.streamlit.app](https://personalitytraitpredictor.streamlit.app/)
+
 ---
 
 ## What it does
