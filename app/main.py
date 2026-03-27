@@ -43,7 +43,7 @@ footer { display: none; }
 /* Main container */
 .block-container {
     padding: 0.5rem 2rem 4rem !important;
-    max-width: 1000px !important;
+    max-width: 1200px !important;
 }
 
 /* ── Topbar ── */
@@ -143,7 +143,7 @@ footer { display: none; }
 .stRadio > label { display: none !important; }
 .stRadio > div {
     display: flex !important; gap: 0.6rem !important;
-    flex-wrap: wrap !important;
+    flex-wrap: nowrap !important;
 }
 .stRadio > div > label {
     background: #f5f5f5 !important; border: 2px solid #e0e0e0 !important;
@@ -154,6 +154,8 @@ footer { display: none; }
     text-align: center !important; min-width: 0 !important;
     white-space: nowrap !important;
 }
+/* Hide the default radio circle */
+.stRadio > div > label > div:first-child { display: none !important; }
 .stRadio > div > label * { color: #333 !important; }
 .stRadio > div > label:hover {
     border-color: #e8400c !important; color: #e8400c !important;
