@@ -125,7 +125,7 @@ footer { display: none; }
 .q-wrapper {
     background: #fff; border-radius: 20px;
     padding: 2.5rem 3rem; border: 1px solid #e8e8e8;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem; min-height: 160px;
 }
 .q-tag {
     display: inline-block; background: #fff0ec; color: #e8400c;
@@ -142,30 +142,29 @@ footer { display: none; }
 /* ── Radio override ── */
 .stRadio > label { display: none !important; }
 .stRadio > div {
-    display: flex !important; gap: 0.6rem !important;
-    flex-wrap: nowrap !important;
+    display: flex !important; gap: 0.5rem !important;
+    flex-wrap: nowrap !important; width: 100% !important;
 }
 .stRadio > div > label {
     background: #f5f5f5 !important; border: 2px solid #e0e0e0 !important;
-    border-radius: 10px !important; padding: 0.6rem 0.8rem !important;
-    font-size: 0.82rem !important; font-weight: 500 !important;
+    border-radius: 10px !important; padding: 0.65rem 0.5rem !important;
+    font-size: 0.8rem !important; font-weight: 500 !important;
     color: #333 !important; cursor: pointer !important;
     transition: all 0.15s ease !important; flex: 1 !important;
     text-align: center !important; min-width: 0 !important;
-    white-space: nowrap !important;
+    white-space: normal !important; word-break: break-word !important;
+    line-height: 1.3 !important;
 }
 /* Hide the default radio circle */
 .stRadio > div > label > div:first-child { display: none !important; }
 .stRadio > div > label * { color: #333 !important; }
 .stRadio > div > label:hover {
-    border-color: #e8400c !important; color: #e8400c !important;
-    background: #fff0ec !important;
+    border-color: #e8400c !important; background: #fff0ec !important;
 }
 .stRadio > div > label:hover * { color: #e8400c !important; }
 .stRadio > div > label[data-checked="true"],
 .stRadio > div > label:has(input:checked) {
     background: #e8400c !important; border-color: #e8400c !important;
-    color: white !important;
 }
 .stRadio > div > label[data-checked="true"] *,
 .stRadio > div > label:has(input:checked) * { color: white !important; }
